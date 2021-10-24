@@ -15,7 +15,13 @@ class Cheese(TimeStampedModel):
         SOFT = 'soft', 'Soft'
         SEMI_SOFT = 'semi-soft', 'Semi-Soft'
         SEMI_HARD = 'semi-hard', 'Semi-Hard'
-        HARD = 'hard', 'Hard'
+        HARD = 'hard', 'Hard',
+        FRESH_SOFT = 'fresh soft', 'Fresh Soft',
+        FIRM = 'firm', 'Firm',
+        ARTISAN = 'artisan', 'Artisan',
+        SEMI_FORM = 'semi-firm', 'Semi-Firm',
+        FRESH_FIRM = 'fresh firm', 'Fresh Firm',
+
 
     firmness = models.CharField('Firmness', max_length=20,
         choices=Firmness.choices, default=Firmness.UNSPECIFIED)

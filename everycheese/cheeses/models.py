@@ -1,9 +1,9 @@
 from django.db import models
 from django.urls import reverse
+from django.conf import settings
 from autoslug import AutoSlugField
 from model_utils.models import TimeStampedModel
 from django_countries.fields import CountryField
-
 
 class Cheese(TimeStampedModel):
     name = models.CharField('Name of Cheese', max_length=255)
